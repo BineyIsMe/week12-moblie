@@ -5,12 +5,12 @@ import 'package:uuid/uuid.dart';
 
 class Grocery {
   static var uuid = Uuid();
-  const Grocery({
-    required this.id,
+   Grocery({
+    String id ="",
     required this.name,
     required this.quantity,
     required this.category,
-  });
+  }):id=uuid.v4();
 
   final String id;
   final String name;

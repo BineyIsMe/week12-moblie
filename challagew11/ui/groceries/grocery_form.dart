@@ -51,8 +51,8 @@ class _NewItemState extends State<NewItem> {
     String  name= defautName;
     int quantity= int.tryParse(_quantityController.text)??0;
     GroceryCategory category= defaultCategory;
-    Grocery(category: _selectedCategory,name: name,quantity: quantity,id:"aaa");
-    Navigator.pop(context,NewItem);
+   Grocery newgrory= Grocery(category: _selectedCategory,name: name,quantity: quantity);
+    Navigator.pop(context,newgrory);
 
   }
 
